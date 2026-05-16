@@ -46,3 +46,4 @@ def has_permission(doc):
 		doc = frappe.get_list(doc.doctype, filters={"name": doc.name}, pluck="name")
 		if not doc:
 			return False
+	return True
